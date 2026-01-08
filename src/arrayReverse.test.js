@@ -26,7 +26,7 @@ describe(`Function 'arrayReverse':`, () => {
 
   it(`should return reversed string
     if the original array consists of one word`, () => {
-    expect(arrayReverse(['Hello'])).toEqual(['olleH']);
+    expect(arrayReverse(['Hell0'])).toEqual(['0lleH']);
   });
 
   it(`should return reversed string
@@ -41,7 +41,9 @@ describe(`Function 'arrayReverse':`, () => {
 
   it(`should return array with reversed words
       if original array consists of several words`, () => {
-    expect(arrayReverse([`It's not a lake,`, ` `, `it's an ocean`]))
-      .toEqual([`naeco na s'ti ,e`, `k`, `al a ton s'tI`]);
+    expect(arrayReverse(['Mate', 'Academy'])).toEqual(['ymed', 'acAetaM']);
+
+    expect(arrayReverse(['I', 'am', 'a', 'student!']))
+      .toEqual(['!', 'tn', 'e', 'dutsamaI']);
   });
 });
